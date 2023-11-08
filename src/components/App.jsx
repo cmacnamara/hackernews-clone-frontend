@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import './../styles/App.css'
 import LinkList from './LinkList'
 import CreateLink from './CreateLink'
 import Header from './Header'
 import { Route, Routes } from 'react-router'
+import Login from './Login'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
             path='/create'
             element={<CreateLink/>} 
           />
+          <Route path="/login" element={<Login />}/>
         </Routes>
       </div>
     </div>
